@@ -1,0 +1,29 @@
+[out:json][timeout:2500];
+{{geocodeArea:CH-ZH}}->.searchArea;
+(
+  node["amenity"="school"](area.searchArea);
+  node["amenity"="kindergarten"](area.searchArea);
+);
+out body;
+>;
+out skel qt;
+
+[out:json][timeout:2500];
+{{geocodeArea:CH-ZH}}->.searchArea;
+(
+  node["amenity"="grave_yard"](area.searchArea);
+  node["amenity"="cemetery"](area.searchArea);
+);
+out body;
+>;
+out skel qt;
+
+[out:json][timeout:2500];
+{{geocodeArea:CH-ZH}}->.searchArea;
+(
+  node["amenity"="supermarket"](area.searchArea);
+  node["amenity"="convenience store"](area.searchArea);
+);
+out body;
+>;
+out skel qt;
